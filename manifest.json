@@ -1,0 +1,16 @@
+{
+  "name": "Ignore Shitlord Button",
+  "version": "1.0",
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://teamfortress.tv/forum/*"],
+      "js": ["jquery.js", "button.js"]
+    }
+  ]
+}
